@@ -4,6 +4,10 @@ class PortfoliosController < ApplicationController
 		@portfolios = Portfolio.all
 	end
 
+  def android
+    @android_protfolio_items = Portfolio.android
+  end
+
 	def new
 		@portfolio_item = Portfolio.new
 	end

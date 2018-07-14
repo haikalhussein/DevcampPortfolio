@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   get 'android-items', to: 'portfolios#android'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   
-  get 'pages/about'
+  get 'about-me', to: 'pages#about'
 
-  get 'pages/contact'
+  get 'contact', to: 'pages#contact'
 
   resources :blogs do 
   	member do

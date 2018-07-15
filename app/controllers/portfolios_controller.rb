@@ -61,7 +61,7 @@ class PortfoliosController < ApplicationController
 	private
 
     # Use callbacks to share common setup or constraints between actions.
-    def set_blog
+    def set_portfolio
       @portfolio_item = Portfolio.friendly.find(params[:id])
     end
 

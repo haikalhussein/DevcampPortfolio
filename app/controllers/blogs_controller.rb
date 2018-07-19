@@ -32,7 +32,7 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
+        format.html { redirect_to @blog, notice: 'Your blog is now live.' }
         format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
@@ -73,7 +73,7 @@ class BlogsController < ApplicationController
     end
 
     respond_to do |format|
-      format.html {redirect_to blogs_url, notice: "Post status has been updated."}
+      format.html {redirect_to blogs_url, notice: "Blog status has been updated."}
       format.json { head :no_content}
     end
 
@@ -87,6 +87,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :topic_id, :body)
     end
 end

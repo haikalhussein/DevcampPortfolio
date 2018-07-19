@@ -51,3 +51,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id' #lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.
 gem 'devise'
+
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'

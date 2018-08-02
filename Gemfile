@@ -54,3 +54,4 @@ gem 'devise'
 
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
+gem 'hh_view_tool', git: 'https://github.com/haikalhussein/hh_view_tool'

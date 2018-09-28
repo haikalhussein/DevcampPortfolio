@@ -1,4 +1,4 @@
-@import "bootstrap";
+@import "bootstrap";  
 
 /*
  * Globals
@@ -132,15 +132,6 @@ body {
  */
 
 @media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: inherit;
-    top: auto;
-  }
-  .mastfoot {
-    position: bottom;
-    bottom: 0;
-  }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -165,7 +156,7 @@ body {
  * Custom Styles
  */
 
-.card-body {
+.card-block {
   color: black;
   text-align: left;
 }
@@ -173,3 +164,4 @@ body {
 .auth-links a {
   color: black;
 }
+

@@ -110,7 +110,7 @@ body {
  */
 
 .cover {
-  padding: 0 1.5rem;
+  padding: 75px 1.5rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -156,6 +156,10 @@ body {
  * Custom Styles
  */
 
+.content-padding {
+  padding: 15px 0.5rem;
+}
+
 .card-body {
   color: black;
   text-align: left;
@@ -163,5 +167,9 @@ body {
 
 .auth-links a {
   color: black;
+}
+
+.register-text {
+  text-align: right;
 }
 

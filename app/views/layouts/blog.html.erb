@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -12,15 +14,22 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-    <%= render 'shared/nav' %>
+    <%= render 'shared/blog_nav' %>
+    <%= render 'shared/blog_masthead' %>
 
-    <%= login_helper %>
-    
-    <%= yield %>
+    <div class="container">
 
-    <%= source_helper %>
+      <div class="row">
+
+        <%= yield %>
+
+        <%= render 'shared/blog_sidebar' %>
+      </div>
+
+      <%= render 'shared/blog_footer' %>
+
+      <%= source_helper("blog") %>
+    </div>
   </body>
 </html>

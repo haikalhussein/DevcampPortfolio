@@ -4,7 +4,7 @@ class PortfoliosController < ApplicationController
   access all: [:show, :index, :android], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
   
 	def index
-		@portfolios = Portfolio.all
+		@portfolio_items = Portfolio.all
 	end
 
   def android

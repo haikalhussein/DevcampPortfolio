@@ -21,10 +21,6 @@
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
     <!-- start of masthead  -->
 
-    <%= render 'shared/nav', location: 'top' %>
-
-    <%= login_helper %>
-
     <%= yield %>
 
     <!-- start of footer -->

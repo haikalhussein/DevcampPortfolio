@@ -21,7 +21,6 @@ class PortfoliosController < ApplicationController
 
 	def new
 		@portfolio_item = Portfolio.new
-    3.times {@portfolio_item.technologies.build}
 	end
 
 
@@ -75,7 +74,7 @@ class PortfoliosController < ApplicationController
     end
 
     def portfolio_params
-      params.require(:portfolio).permit(:title, :subtitle, :main_image, :thumb_image, :body, technologies_attributes: [:name])
+      params.require(:portfolio).permit(:title, :subtitle, :main_image, :thumb_image, :body, technologies_attributes: [:id, :name, :_destroy])
     end
 
 

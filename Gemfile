@@ -29,7 +29,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id' 
 gem 'devise'
 
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'hh_view_tool', git: 'https://github.com/haikalhussein/hh_view_tool'
 gem 'petergate', '~> 1.8', '>= 1.8.1'

@@ -8,6 +8,9 @@
     <span>
       <%= link_to "| Topics", topics_path %>
     </span>
+    <span>
+      <%= link_to "| Write a New Topic", new_topic_path if logged_in?(:site_admin) %>
+    </span>
 
   </div>
 </div>

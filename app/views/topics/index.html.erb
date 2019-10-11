@@ -1,7 +1,18 @@
 <div class="col-sm-8 blog-main">
 
     <h1>Topics</h1>
-    
-    <%= render @topics %>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Title</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @topics %>
+      </tbody>
+    </table>
+        
 
 </div>

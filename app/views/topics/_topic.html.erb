@@ -1,5 +1,8 @@
-<div>
-  <%= link_to topic.title, topic_path(topic) %>
-</div>
-  
-
+<tr>
+  <th scope="row"><%= topic.id %></th>
+  <td><%= link_to topic.title, topic_path(topic) %></td>
+  <td>
+    <span><%= link_to fa_icon('pencil-square-o'), edit_topic_path(topic) %></span> 
+    <span class="text-danger"><%= link_to fa_icon('trash'), topic, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+  </td>
+</tr>

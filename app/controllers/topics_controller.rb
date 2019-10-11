@@ -5,7 +5,7 @@ class TopicsController < ApplicationController
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
   def index
-    @topics = Topic.all
+    @topics = Topic.page(params[:page]).per(5)
   end
 
   def show
